@@ -70,4 +70,6 @@ EOF
 # Stop the system's xochitl and launch ours
 systemctl stop xochitl
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:lib-${FIXED_VERSION} LD_PRELOAD=lib-${FIXED_VERSION}/librm2fb_server.so.1.0.1 bin/xochitl-rm2-${FIXED_VERSION} &
-LD_PRELOAD=lib-${CURRENT_VERSION}/librm2fb_client.so.1.0.1 bin/xochitl-rm1-${CURRENT_VERSION}
+# TODO: here we load also the libraries from ${FIXED_VERSION} because the client
+# was compiled with Qt5. Remove this once we recompile it with Qt6
+LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:lib-${FIXED_VERSION} LD_PRELOAD=lib-${CURRENT_VERSION}/librm2fb_client.so.1.0.1 bin/xochitl-rm1-${CURRENT_VERSION}
