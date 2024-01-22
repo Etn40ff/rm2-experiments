@@ -1,0 +1,31 @@
+root@bb5eb8dc63a6:/# /opt/x-tools/arm-remarkable-linux-gnueabihf/bin/arm-linux-gnueabihf-ldd --root / /tmp/bunion/xochitl-2.15
+        libdatachannel.so.0.17.1 not found
+        libpaho-mqttpp3.so.1 not found
+        libpaho-mqtt3as.so.1 not found
+        libpthread.so.0 => /lib/libpthread.so.0 (0x8badf00d)
+        libc.so.6 => /lib/libc.so.6 (0x8badf00d)
+        ld-linux-armhf.so.3 => /lib/ld-linux-armhf.so.3 (0x8badf00d)
+        libz.so.1 not found
+        libprotobuf.so.22 not found
+        libqt-rappor.so.1 not found
+        libQtWebAppHttpServer.so.1 not found
+        libQt5WebSockets.so.5 not found
+        libudev.so.1 => /lib/libudev.so.1 (0x8badf00d)
+        librt.so.1 => /lib/librt.so.1 (0x8badf00d)
+        libsystemd.so.0 => /lib/libsystemd.so.0 (0x8badf00d)
+        libcap.so.2 => /lib/libcap.so.2 (0x8badf00d)
+        libQt5DBus.so.5 not found
+        libKF5Archive.so.5 not found
+        libQt5Svg.so.5 not found
+        libQt5Xml.so.5 not found
+        libpdfium.so not found
+        libQt5Quick.so.5 not found
+        libQt5Qml.so.5 not found
+        libcrypt.so.2 not found
+        libQt5Network.so.5 not found
+        libQt5Gui.so.5 not found
+        libQt5Core.so.5 not found
+        libstdc++.so.6 => /lib/libstdc++.so.6 (0x8badf00d)
+        libm.so.6 => /lib/libm.so.6 (0x8badf00d)
+        libgcc_s.so.1 => /lib/libgcc_s.so.1 (0x8badf00d)
+
